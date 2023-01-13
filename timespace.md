@@ -22,11 +22,11 @@
 
   - Mathematical tools to represent time and space complexity
 
-    1.  BigO Notation - Worst case complexity\*\*\*\*
+    1. BigO Notation - Worst case complexity\*\*\*\*
 
-    2.  Omega Notation - Best case complexity (dont worry wont ask)
+    2. Omega Notation - Best case complexity (dont worry wont ask)
 
-    3.  Theta Notation - Average case complexity (dont worry wont ask)
+    3. Theta Notation - Average case complexity (dont worry wont ask)
 
 ### Time Complexity
 
@@ -203,15 +203,3 @@ An array is an ordered collection of values
 - Shift/unshift/concat/slice/splice- O(n)
 
 - forEach/map/filter/reduce- O(n)
-
----
-
-#### Sort
-
----
-
-#### Search
-
----
-
-#### Misc. algo & problem solving
