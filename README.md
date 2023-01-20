@@ -52,4 +52,4 @@
 
 ### [Misc. Refresher](./moreHelp.md)
 
-### [White Board](./whiteBoard.md)
+### [WhiteBoard](./whiteBoard.md)
