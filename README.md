@@ -51,3 +51,5 @@
 ### [Algorithms with Math](./mathAlgo.md)
 
 ### [Misc. Refresher](./moreHelp.md)
+
+### [White Board](./whiteBoard.md)
