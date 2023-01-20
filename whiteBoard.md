@@ -64,12 +64,9 @@
 - Justified a Big O time and space complexity
 
 > he interviewee justified the time and space complexity, probably using a common O(1), O(logN), O(NlogN), or O(N2). There was an understanding that time complexity increases with nested iteration, and space complexity increases with memory (or variable) allocations
-
 > Time and space complexity was correct
 > The justification was correct for their algorithm
-
 > Did not miss implications of using language builtins
-
 > The interviewee identified any time and space implications from their language built-ins, and identified them correctly
 
 ## 11. Communicated effectively throughout
