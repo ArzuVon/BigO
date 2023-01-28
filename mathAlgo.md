@@ -276,9 +276,50 @@ add prev two 5 + 8 = 13
    - Worst for iterative solution
    - May not be faster despite simplified tactic
 
-#### Math
+#### Math Fibonacci W/Recursion
 
-- Fibonacci sequence with recursion
+   - Fibonacci sequence with recursion
+   - Problem- Given a number 'n' find the nth element of the Fibonacci sequence
+   - Fibonacci sequence is a sequence in which each number is the sum of two preceding ones
+   - The first two numbers in the sequence are 0 and 1. (0,1,1,2,3,5,8...)
+   - recursiveFibonacci(0)= 0
+   - recursiveFibonacci(1)= 1
+   - recursiveFibonacci(6)= 8
+
+   - If F represents a function to calaulate the fibonacci number, then
+   - Fn = F(n-1) + F(n-2)
+
+    -Base Case:
+
+    - F0 = 0 and F1 = 1
+    - F2 = F1 + F0
+    - F1 = 1
+    - F2 = 1 + 0
+    - F2 = 1
+
+   ```javascript
+   1.function recursiveFibonacci(n){
+   2.  if(n < 2 ) {
+   3.     return n
+   4.  }
+   5. return recursiveFibonacci(n-1) + recursiveFibonacci(n-2)
+   6.}
+   7.
+   8.console.log(recursiveFibonacci(0)) //0
+   9.console.log(recursiveFibonacci(1)) //1
+   10.console.log(recursiveFibonacci(6)) //8
+   11.
+   ```
+Time Complexity:
+
+- F7 = F6 + F5  
+- F6 = F5 + F4 $2^1$
+- F5 = F4 + F3 $2^3$
+- F4 = F3 + F2 $2^4$
+- F3 = F2 + F1 $2^5$
+- = $2^n$ = Time Complexity 0($2^n$)
+
+  
 
 #### Math
 
