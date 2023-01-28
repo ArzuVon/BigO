@@ -319,10 +319,165 @@ Time Complexity:
 - F3 = F2 + F1 $2^5$
 - = $2^n$ = Time Complexity 0($2^n$)
 
-  
+#### Math Factorial W/Recursion
 
-#### Math
+   - Problem- Given an integer 'n', find the factorial of that integer
+   - Factorial of a non-negative integer 'n', denoted n!, is the product of all positive integers less than or equal to 'n'.
+   - Factorial of zero is 1.
+   - factorial(4) = 4*3*2*1 = 24
+   - factorial(5) = 5*4*3*2*1= 120
+   - 5! = 5*4*3*2*1    5*4!
+   - 4! = 4*3*2*1      4*3!
+   - 3! = 3*2*1        3*2!
+   - 2! = 2*1          2*1!
+   - 1! = 1*1          1*0!
+   - Base Case: 0! = 1 
+   - n! = n*(n-1)!
+ 
 
-- Factorial of a number with recursion
+   ```javascript
+   1.function recursiveFactorial(n){
+   2.  if(n === 0) {
+   3.     return 1
+   4.  }
+   5. return n * recursiveFactorial(n-1)
+   6.}
+   7.
+   8.console.log(recursiveFactorial(0)) //1
+   9.console.log(recursiveFactorial(1)) //1
+   10.console.log(recursiveFactorial(5)) //120
+   11.
+   ```   
+
+   ---
+
+ #### Search Algorithm
+
+
+ ##### Linear Search
+
+   - Problem Statement: Given an array of 'n' elements and a target element 't', find the index of 't' in the array. Return -1 if the target element is not found.
+
+        - arr = [-5,2,10,4,6], t =10 -> Should return 2
+        - arr = [-5,2,10,4,6], t =6 -> Should return 4
+        - arr = [-5,2,10,4,6], t =20 -> Should return -1
+
+- pseudocode
+     - start at the first element in the array and move towards the last
+     - at each element check the element is equal to target element
+     - if element found, return the index of the element
+     - if element not found, return -1
+
+   ```javascript
+   1.function lSearch(arr, target) {
+   3.  for(let i = 0; i < arr.length; i++){
+   4.     if( arr[i] === target) {
+   5.        return i
+   6.   }
+   7. }
+   8. return -1
+   9.}
+   10.
+   11.console.log(lSearch([-5,2,10,4,6], 10)) //2
+   12.console.log(lSearch([-5,2,10,4,6], 6)) //4
+   13.console.log(lSearch([-5,2,10,4,6], 20)) //-1
+   14.
+   ```
+   
+Time Complexity is O(n) because we need to iterate n times the array to check and find targets. size of the array determines size of execution. as it increases so does the execution.
+
+   ##### Binary Search
+
+- Problem- Given a sorted array of 'n' elements and a target element 't', find the index of 't' in the array. Return -1 if the target element is not found.
+     - Binary search ONLY works on a sorted array
+     - Use linear search to sort the array if not sorted then binary search
+     - arr = [-5,2,4,6,10], t =10 -> Should return 4
+     - arr = [-5,2,4,6,10], t =6 -> Should return 3
+     - arr = [-5,2,4,6,10], t =20 -> Should return -1
+
+- Pseudocode
+
+     - If the array is empty, return -1 as the element cannot be found.
+     - If the array has elements, find the middle element in the array. If target is equal to the middle element, return the middle element index.
+     - If target is less than the middle element, binary search left half of the array.
+     - If target is greater than the middle element, binary search right half of the array.
+     - finding the middle element is key for searching
+ 
+   ```javascript
+   1.function bSearch(arr, target) {
+   2.     let leftIndex = 0
+   3.     let rightIndex = arr.length -1
+   4.    
+   5.   while(leftIndex <= rightIndex) {
+   6.     let middleIndex = Math.floor((leftIndex - rightIndex) /2)
+   7.     if(target === arr[middleIndex]){
+   8.       return middleIndex
+   9.     }
+   10.    if(target < arr[middleIndex]) {
+   11.      rightIndex = middleIndex -1
+   12.    } else {  
+   13.      leftIndex = middleIndex + 1 
+   14.    }
+   15.  }
+   16.  return -1
+   17. }
+   18. console.log(bSearch([-5,2,4,6,10], 10)) // 4
+   19. console.log(bSearch([-5,2,4,6,10], 6))  // 3
+   20. console.log(bSearch([-5,2,4,6,10], 20   //-1
+   ```
+
+     Big O: our function contains 1 while loop and inside of it we reduce size by half so
+     Olog(n), instruction increases as growns and not in same amount
+
+     
+
+ ##### Binary Search w/ Recursion
+
+- Problem- Given a sorted array of 'n' elements and a target element 't', find the index of 't' in the array. Return -1 if the target element is not found.
+
+   - arr = [-5,2,4,6,10], t =10 -> Should return 4
+   - arr = [-5,2,4,6,10], t =6 -> Should return 3
+   - arr = [-5,2,4,6,10], t =20 -> Should return -1
+
+     - TIPS FOR RECURSIVE SOLUTIONS
+     - Figure out how to break down the problem into smaller versions of the same problem
+     - Identify the base case for recursion
+
+- Pseudocode
+
+- BREAKDOWN: If the array is empty, return -1 as the element cannot be found.
+- BREAKDOWN: If the array has elements, find the middle element in the array. If target is equal to the middle element, return the middle element index.
+- BASE CASE: If target is less than the middle element, binary search left half of the array.
+- BASE CASE:If target is greater than the middle element, binary search right half of the array.
+
+ 
+
+   ```javascript
+   1.function recursiveBSearch(arr, target) {
+   2.   return search(arr, target, 0, arr.legnth -1)
+   3. } 
+   4.
+   5. function search(arr, target, leftIndex, rightIndex) {
+   6.   if( leftIndex > rightIndex) {
+   7.   return -1
+   8.   }
+   9.  
+   10. let middleIndex = Math.floor((leftIndex - rightIndex) / 2)
+   11.    if(target === arr[middleIndex]) {
+   12.       return middleIndex
+   13.     }
+   14.    
+   15.    if(target < arr[middleIndex]) {
+   16.      return search(arr, target, leftIndex, middleIndex -1)
+   17.    } else {  
+   18.      return search(arr, target, middleIndex + 1, rightIndex) 
+   19.    }
+   20.  }
+   21. console.log(bSearch([-5,2,4,6,10], 10)) // 4
+   22. console.log(bSearch([-5,2,4,6,10], 6))  // 3
+   23. console.log(bSearch([-5,2,4,6,10], 20   //-1
+   ```
+
+    BigO:The same function search is getting called over and over and reducing by half making Olog(n)
 
 ---
