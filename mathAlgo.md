@@ -266,9 +266,15 @@ add prev two 5 + 8 = 13
 
   Big O = O(n)
 
-#### Math
+#### Math Recursion
 
-- Recursion
+   - Recursion is a problem solving technique where the solution depends on solutions to smaller instances of the same problem
+   - Recursion is when a function calls itself
+   - Simplify's your solution
+   - If you find yourself breaking down your problem into smaller versions of the same problem, recursion is very useful
+   - Every recursive solution needs to have a base case--a condition to terminate the recursion
+   - Worst for iterative solution
+   - May not be faster despite simplified tactic
 
 #### Math
 
