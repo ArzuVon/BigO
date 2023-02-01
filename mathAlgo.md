@@ -663,3 +663,85 @@ Time Complexity is O(n) because we need to iterate n times the array to check an
 
     // Worst case : $O(n^2)$
     // Avg case: O(nlog(n))
+    
+     ##### Merge Sort
+
+     - Problem- Given an array of integers, sort the array
+
+     - Sorting could be acending or decending
+
+     - const arr = [-6, 20, 8, -2, 4]
+
+     - mSort(arr) => Should return [-6, -2, 4, 8, 20]
+
+    
+
+     Divide the array into sub arrays, each containing only one element (An array w/one element is considered sorted)
+
+     Repeatedly merge the sub arrays to produce new sorted sub arrays until there is only one sub array remaining. That will be the sorted array
+
+  -  [-6, 20]  [-2, 4, 8] => [] Left & right sub array's, both are not empty. -6 < -2
+
+  -  [20] [-2, 4, 8] => [-6] Left & right are not empty.-2 < 20
+
+  -  [ 20] [4, 8] => [-6, -2] Left & right are not empty. 4 < 20
+
+  -  [20] [8] => [-6, -2, 4] Left & right are not empty.-2 < 20
+
+  -  [20] [8] => [-6, -2, 4] Left & right are not empty.-2 < 20
+
+ 
+
+   ```javascript
+
+      1. function mSort(arr) {
+
+      2. if (arr.length < 2) {
+
+      3.   return arr
+
+      4.}
+
+      5. const mid = Math.floor(arr.length / 2)
+
+      6. const leftArr = arr.slice(0, mid)
+
+      7. const rightArr = arr.slice(mid)
+
+      8. return merge(mSort(leftArr), mSort(rightArr))
+
+      9.}
+
+     10.
+
+     11.function merge(leftArr, rightArr) {
+
+     12. const sortedArr = []
+
+     13.  while (leftArr.length && rightArr.length) {
+
+     14.    if (leftArr[0] <= rightArr[0]) {
+
+     15.      sortedArr.push(leftArr.shift())
+
+     16.    } else {
+
+     17.      sortedArr.push(rightArr.shift())
+
+     18.    }
+
+     19.  }
+
+     20.  const resultArr = [...sortedArr, ...leftArr, ...rightArr]
+
+     21.  return resultArr
+
+     22. }
+
+     23.
+
+     24. const arr = [8, 20, -2, 4, -6]
+
+     25. console.log(mSort(arr)) // [-6, -2, 4, 8, 20]
+
+   ```
