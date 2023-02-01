@@ -481,3 +481,60 @@ Time Complexity is O(n) because we need to iterate n times the array to check an
     BigO:The same function search is getting called over and over and reducing by half making Olog(n)
 
 ---
+
+#### Sort Algorithm
+
+   ##### Bubble Sort
+
+   - Compare adjacent elements in the array and swap the positions if they are not in the intended order
+   - Repeat the instruction as you step through each element in the array
+   - Once you step through the whole array with no swaps, the array is sorted
+
+   - problem: Given an array of integers, sort the array.
+   - const arr = [-6, 20, 8, -2, 4]
+   - bubbleSort(arr) => Should return [-6, -2, 4, 8, 20]
+
+   -Pseudocode
+
+    -[-6, 20, 8, -2, 4]
+    -[-6, 8, 20, -2, 4]  Swap since 20 > 8
+    -[-6, 8, -2, 20, 4]  Swap since 20 > -2
+    -[-6, 8, -2, 4, 20]  Swap since 20 >  4
+    -[-6, 8, -2, 4, 20]
+-End of array. Elements swapped? Yes? Repeat the comparison.
+
+    -[-6, 8, -2, 4, 20] 
+    -[-6, -2, 8, 4, 20]  Swap since 8 > -2
+    -[-6, -2, 4, 8, 20]  Swap since 8 > 4
+-End of array. Elements swapped? Yes? Repeat the comparison.
+
+    -[-6, -2, 4, 8, 20]
+-End of array. Elements swapped? No? Arrauy is sorted.
+
+- Bubble Sort Solution
+
+     ```javascript
+     1. function bSort(arr){
+     2.  let swapped
+     3.  do {
+     4.   swapped = false
+     5.   for(let i = 0; i < arr.length -1; i++) {
+     6.    if(arr[i] > arr[i+1]) {
+     7.     let temp = arr[i]
+     8.     arr[i] = arr[i+1]
+     9.     arr[i+1] = temp
+     10.     swapped = true
+     11.    }
+     12.   }  
+     13. } while(swapped)
+     14.}
+     15.
+     16.const arr = [8, 20, -2, 4, -6]
+     17.bSort(arr)
+     18.console.log(arr) // [-6,-2,4,8,20]
+     ```
+
+    Big O of bubble sort has a for loop and do while loop. Big O is quadratic time complexity
+    Big O is $O(n)^2$
+    
+    
