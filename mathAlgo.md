@@ -537,4 +537,129 @@ Time Complexity is O(n) because we need to iterate n times the array to check an
     Big O of bubble sort has a for loop and do while loop. Big O is quadratic time complexity
     Big O is $O(n)^2$
     
+    ##### Insertion Sort
+
+   - Problem- Given an array of integers, sort the array
+
+   - const arr = [-6, 20, 8, -2, 4]
+
+   - iSort(arr) => Should return [-6, -2, 4, 8, 20]
+
+ 
+
+ 
+
+   - Virtually split the array into a sortes and unsorted part
+
+   - Assume that the first element is already sorted and remaining elements are unsorted
+
+   - Select an unsorted element and compare with all element
+
+   - If the element in the sorted part is smaller than the selected element, proceed to the next element in the unsorted part. Else, shift larger elements in the sorted part towards the right.
+
+   - Insert the selected element at the right index
+
+   - Repeat till all the unsorted elements are placed in the right order
+
+  
+
+   - [-6, 20, 8, -2, 4] Number to Insert (NTI)=20| Sorted Element (SE)=-6 | -6>20.No. Place 20 to the right of -6
+
+   - [-6, 20, 8, -2, 4] Number to Insert (NTI)=8| Sorted Element (SE)=20 | 20>8? Yes. Shift 20 to the right
+
+   - [-6, 20, 20, -2, 4] Number to Insert (NTI)=8| Sorted Element (SE)=-6 | -6>8? No. Place 8 to the right to the right of -6
+
+   - [-6, 8, 20, -2, 4] Number to Insert (NTI)=-2| Sorted Element (SE)=20 | 20>-2? Yes. Shift 20 to the right
+
+   - [-6, 8, 20, 20, 4] Number to Insert (NTI)=-2| Sorted Element (SE)=8 | 8>-2? Yes. Shift 8 to the right
+
+   - [-6, 8, 8, 20, 4] Number to Insert (NTI)=-2| Sorted Element (SE)=-6 | -6>2? No. Place -2 to the right of -6
+
+   - [-6, -2, 8, 20, 4]Number to Insert (NTI)=4| Sorted Element (SE)=20 | 20>4? Yes. Shift 20 to the right
+
+   - [-6, -2, 8, 20, 20]Number to Insert (NTI)=4| Sorted Element (SE)=8 | 8>4? Yes. Shift 8 to the right
+
+   - [-6, -2, 8, 8, 20]Number to Insert (NTI)=4| Sorted Element (SE)=-2 | -2>4? No. Place 4 to the right of -2
+
+   - [-6, -2, 8, 8, 20] Reached end of array. Array is sorted.
+
+ 
+
+  - Insertion Sort solution
+
+    ```javascript
+
+    1. function iSort(arr){
+
+    2.  for(let i = 0; i < arr.length -1; i++) {
+
+    3.     let numberToInsert = arr [i]
+
+    4.     let j = i - 1
+
+    5.      while(j >= 0 && arr[j] > numberToInsert) {
+
+    6.         arr[j+1] = arr[j]
+
+    7.         j = j-1
+
+    8.       }
+
+    9.       arr[j+1] = numberToInsert
+
+    10.     }
+
+    11.    }
+
+    12.const arr = [8, 20, -2, 4, -6]
+
+    13.iSort(arr)
+
+    14.console.log(arr) // [-6,-2,4,8,20]
+
+    ```
+
+ 
+
+   ##### Quick Sort
+
+     - Problem- Given an array of integers, sort the array
+     - Sorting could be acending or decending
+     - const arr = [-6, 20, 8, -2, 4]
+     - qSort(arr) => Should return [-6, -2, 4, 8, 20]
+
+   ###### Identify the pivot element in the array
+     - Pick first element as pivot
+     - Pick last element as pivot (Our approach)
+     - Pick a random element as pivot
+     - Pick median as pivot
+     Put everything that's smaller than the pivot into a 'left' array and everyhting that's greater than the pivot into a 'right' array
+   - Repeat the process for the individual 'left' and 'right' arrays till you have an array of length 1 which is sorted by definition
+   - Repeatedly concatenate the left array, pivot and right array till one sorted array remains
+
     
+
+     ```javascript
+         1. function qSort(arr) {
+         2.    if(arr.length < 2) {
+         3.       return arr
+         4.    } 
+         5.    let pivot = arr[arr.length -1]
+         6.    let left = []
+         7.    let right = []
+         8.    for(let i = 0; i < arr.length -1; i++){
+         9.       if(arr[i] < pivot) {
+         10.       left.push(arr[i])
+         11.       } else {
+         12.       right.push(arr[i])  
+         13.    }  
+         14.  }
+         15. return [...qSort(left).pivot, ...qSort(right)]
+         16. }
+         17.
+         18. cont arr = [8, 20, -2, 4, -6]
+         19. console.log(qSort(arr)) //[-6, -2, 4, 8, 20] 
+     ```
+
+    // Worst case : $O(n^2)$
+    // Avg case: O(nlog(n))
