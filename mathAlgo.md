@@ -830,4 +830,35 @@ function rangeOfNumbers(startNum, endNum) {
 
 console.log(rangeOfNumbers(1,11))
 
+ ---
+ 
+ 
+ 
+
+Arrow Function Example
+
+Const rangeOfNumbers = (startNum, endNum) => [];
+
+ 
+
+De-structuring
+
+function removeFirstTwo(list) {
+
+  // Only change code below this line
+
+  const [a, b, ...shorterList] = list; // Change this line, it was const shorterList = list;
+
+  // Only change code above this line
+
+  return shorterList;
+
+}
+
+ 
+
+const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const sourceWithoutFirstTwo = removeFirstTwo(source);
+
  
