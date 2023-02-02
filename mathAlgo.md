@@ -774,4 +774,60 @@ console.log(countdown(5))
 
 // Only change code above this line
 
+---
 
+Count Up
+
+// Only change code below this line
+
+function countup(n){
+
+  if (n < 1) {
+
+    return [];
+
+  } else {
+
+    const countArray = countup(n - 1);
+
+    countArray.push(n);  //makes it count up
+
+    return countArray;
+
+  }
+
+}
+
+ 
+
+console.log(countdown(5))
+
+// Only change code above this line
+
+---
+
+Count “up to” Parameters Given
+
+function rangeOfNumbers(startNum, endNum) {
+
+  if (endNum < startNum) {
+
+    return [];
+
+  } else {
+
+    const num = rangeOfNumbers(startNum, endNum - 1);
+
+    num.push(endNum);
+
+    return num;
+
+  }
+
+}
+
+ 
+
+console.log(rangeOfNumbers(1,11))
+
+ 
