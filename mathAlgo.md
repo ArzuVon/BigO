@@ -745,3 +745,33 @@ Time Complexity is O(n) because we need to iterate n times the array to check an
      25. console.log(mSort(arr)) // [-6, -2, 4, 8, 20]
 
    ```
+   
+   Count Down
+
+// Only change code below this line
+
+function countdown(n){
+
+  if (n < 1) {
+
+    return [];
+
+  } else {
+
+    const countArray = countdown(n - 1);
+
+    countArray.unshift(n); //makes it count down
+
+    return countArray;
+
+  }
+
+}
+
+ 
+
+console.log(countdown(5))
+
+// Only change code above this line
+
+
