@@ -16,8 +16,17 @@
 
  #### Misc. algo & problem solving
    ##### Misc Problems
-
-
+    - Problem Statement
+    
+    
+    > Psedo
+    
+        ```javascript
+        1.
+        
+        
+        ```
+   Big O
 
    ##### Cartesian Product
 
