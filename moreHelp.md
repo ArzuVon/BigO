@@ -9,11 +9,6 @@
    ---
 
   
-
- 
-
-  
-
  #### Misc. algo & problem solving
    ##### Misc Problems
     - Problem Statement
@@ -71,6 +66,17 @@
 
 
    ##### Further learning
+- Problem Statement
+    
+    
+    > Psedo
+    
+        ```javascript
+        1.
+        
+        
+        ```
+   Big O
 
 ---
 
