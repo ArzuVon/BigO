@@ -57,7 +57,17 @@
 
 
    ##### Tower of Hanoi
-
+- Problem Statement
+    
+    
+    > Psedo
+    
+        ```javascript
+        1.
+        
+        
+        ```
+   Big O
 
 
    ##### Further learning
