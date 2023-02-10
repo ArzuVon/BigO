@@ -29,11 +29,31 @@
    Big O
 
    ##### Cartesian Product
-
+- Problem Statement
+    
+    
+    > Psedo
+    
+        ```javascript
+        1.
+        
+        
+        ```
+   Big O
 
 
    ##### Climbing Staircase
-
+- Problem Statement
+    
+    
+    > Psedo
+    
+        ```javascript
+        1.
+        
+        
+        ```
+   Big O
 
 
    ##### Tower of Hanoi
