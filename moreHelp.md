@@ -1,17 +1,13 @@
 # Misc. algo & problem solving
-
-
 ## [How To Problem Solve 101](https://www.freecodecamp.org/news/how-to-solve-coding-problems/)
-
-
-    
 
    ---
 
-  
  #### Misc. algo & problem solving
+   
    ##### Misc Problems
-    - Problem Statement
+   
+ - Problem Statement
     
     
     > Psedo
@@ -21,7 +17,7 @@
         
         
         ```
-   Big O
+        Big O
 
    ##### Cartesian Product
 - Problem Statement
