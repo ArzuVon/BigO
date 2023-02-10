@@ -15,18 +15,25 @@
   
 
  #### Misc. algo & problem solving
-
-  
-
    ##### Misc Problems
+
+
 
    ##### Cartesian Product
 
+
+
    ##### Climbing Staircase
+
+
 
    ##### Tower of Hanoi
 
+
+
    ##### Further learning
+
+---
 
    ##### Array
 
