@@ -20,9 +20,11 @@
         Big O
 
    ##### Cartesian Product
-- Problem Statement
-    
-    
+      - Problem Statement
+          Approach 1:
+            - Create a new array.
+            - Traverse the first array by outer loop and second array by inner loop.
+            - In the inner loop, Concatenate the first array element with the second array element and push it in a new array.
     > Psedo
     
         ```javascript
