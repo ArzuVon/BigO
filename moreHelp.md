@@ -39,8 +39,11 @@
 
 
    ##### Climbing Staircase
-- Problem Statement
-    
+   - Problem Statement
+   - This is actually a fibonacci sequence. Each number in a fibonacci sequence is the sum of the two preceding ones, starting from 0 and 1.
+   0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+   Fib(n)=Fib(n−1)+Fib(n−2)
+
     
     > Psedo
     
