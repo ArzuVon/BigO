@@ -1,6 +1,10 @@
 # Misc. algo & problem solving
 ## [How To Problem Solve 101](https://www.freecodecamp.org/news/how-to-solve-coding-problems/)
 
+      1. Understand the problem
+      2. Make a plan
+      3. Carry out the plan
+      4. look back/revise
    ---
 
  #### Misc. algo & problem solving
