@@ -43,8 +43,8 @@
 11.console.log(fibonacci(7)) // [0,1,1,2,3,5,8]
 
 
-
-      Fibonaccci(8) = [0,1,1,2,3,5,8,13]
+Big O(2^n)
+Fibonaccci(8) = [0,1,1,2,3,5,8,13]
 
 
 
@@ -79,6 +79,7 @@ add prev two 5 + 8 = 13
 - Nested loops $(O(n^2)$
 
 - Input size reduced by half- O(logn)
+- O(2^n) for n-1 + n -2 like tower of hanoi or fibbanocci
 
 ---
 
