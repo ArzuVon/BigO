@@ -384,7 +384,7 @@ Time Complexity:
    13.console.log(lSearch([-5,2,10,4,6], 20)) //-1
    14.
    ```
-   
+   O(n)
 Time Complexity is O(n) because we need to iterate n times the array to check and find targets. size of the array determines size of execution. as it increases so does the execution.
 
    ##### Binary Search
