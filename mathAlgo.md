@@ -404,6 +404,7 @@ Time Complexity is O(n) because we need to iterate n times the array to check an
      - If target is greater than the middle element, binary search right half of the array.
      - finding the middle element is key for searching
  
+ - Think of a binary search as finding a books middle page and fliping half then half to find the true half
    ```javascript
    1.function bSearch(arr, target) {
    2.     let leftIndex = 0
@@ -415,9 +416,9 @@ Time Complexity is O(n) because we need to iterate n times the array to check an
    8.       return middleIndex
    9.     }
    10.    if(target < arr[middleIndex]) {
-   11.      rightIndex = middleIndex -1
+   11.      rightIndex = middleIndex -1 // Binary Search right
    12.    } else {  
-   13.      leftIndex = middleIndex + 1 
+   13.      leftIndex = middleIndex + 1 //Binary Search Left
    14.    }
    15.  }
    16.  return -1
