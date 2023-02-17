@@ -7,6 +7,7 @@
 ### Algorithm
 
 - A set of well-defined instructions to solve a particular problem
+- Analogy of food recipe's
 - Analogy a thourough wake up
 - Analogy of everyday routine
 - Analogy a in depth day at work
