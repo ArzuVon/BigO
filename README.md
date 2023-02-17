@@ -7,7 +7,9 @@
 ### Algorithm
 
 - A set of well-defined instructions to solve a particular problem
-
+- Analogy a thourough wake up
+- Analogy of everyday routine
+- Analogy a in depth day at work
 - An algortithm should have inputs and outputs
 
 - Each step should be clear and unambiguous
