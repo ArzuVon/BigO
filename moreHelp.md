@@ -100,6 +100,8 @@ function towerOfHanoi(n, from_rod, to_rod, aux_rod)
         
         ```
    Big O
+   >Time complexity: O(2N), There are two possibilities for every disk. Therefore, 2 * 2 * 2 * . . . * 2(N times) is 2N
+Auxiliary Space: O(N), Function call stack space
 
 
    ##### Further learning
