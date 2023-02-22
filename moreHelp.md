@@ -191,5 +191,30 @@ Auxiliary Space: O(N), Function call stack space
 
 - Implement by solving subproblems in order
 
+-**Jenny's Lectures
+
+- Patience & Practice || Dont give up
+
+- Theory & Knowledge
+
+- Use Pen and papper
+
+- Try run your code, use debugger
+
+- Do as many questions as you cann|| keep moving on dont stick to 1 prob
+
+- Regularity...consistency
+
+- go from basic to advance
+
+- DSA
+
+- Dont see the solution until solved
+
+- ***Projects Last...Intresting to you
+
+   - No database proj
+
+
 
    
