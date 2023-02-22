@@ -179,5 +179,17 @@ Auxiliary Space: O(N), Function call stack space
 
 - destructure props parameter =>
 
+#### Improving Prob Solve Refresher
+
+- Visualize examples
+
+- Find an appropriate subproblem
+
+- Find relationships among subproblems
+
+- Generalize the relationship
+
+- Implement by solving subproblems in order
+
 
    
