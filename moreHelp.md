@@ -144,3 +144,40 @@ Auxiliary Space: O(N), Function call stack space
    ##### Binary Search Tree
 
    ##### Graph
+   
+   #### Chat GPT
+
+- *LAWYER check:
+
+   - contracts
+
+   - nda
+
+- Questions and follow up questions w/ any tech
+
+- Write Code w/ folllow up questions
+
+- computer science questions
+
+- question on code shift enter and write code
+
+- Translate code from Python => JavaScript etc.
+
+- Generates dummy data. id. firstname,lastname, city
+
+- you can ask for data w/o code i.e js or pythonn script
+
+- manipulate data as a class
+
+- Can write mark up language in html & Css and rewrite w/ tailwind css
+
+- javascript interactive w/ html....http request
+
+- axios
+
+- compile X runtime errors
+
+- destructure props parameter =>
+
+
+   
